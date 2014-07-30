@@ -1,0 +1,71 @@
+.updates {
+    width: 960px;
+    margin: 15px auto;
+    .title {
+        text-transform: uppercase;
+        font-size: 24px;
+        color: $mediumblue;
+        margin: 0 0 15px 0;
+        @include text-shadow();
+    }
+    .updates_item {
+        height: 40px;
+        line-height: 30px;
+        padding: 5px 10px;
+        font-size: 18px;
+        border: 1px solid $steelblue;
+        border-left-width: 3px;
+        border-radius: 4px;
+        margin: 0 0 10px 0;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        .modified_sign {
+            float: left;
+        }
+        &:hover {
+            background-color: $steelblue;
+            color: $white;
+        }
+        .author, .date {
+            float: right;
+        }
+        .author {
+            margin: 0 15px;
+        }
+    }
+    .pagination {
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 0 .2em;
+            &.active span {
+               box-shadow: 1px 2px 4px 0 $steelblue;
+            }
+        }
+        span,
+        a {
+            display: inline-block;
+            width: 3.2em;
+            height: 2em;
+            line-height: 2em;
+            text-align: center;
+            border-radius: 50%;
+        }
+        span {
+            background-color: $white;
+            box-shadow: 1px 2px 5px 0 $grey;
+        }
+        a {
+            background-color: $steelblue;
+            color: $white;
+            text-decoration: none;
+            box-shadow: 1px 1px 5px 0 $steelblue;
+            &:hover {
+                text-decoration: underline;
+                background-color: $steelblue - #222222;
+                box-shadow: 1px 1px 5px 0 $steelblue - #222222;
+            }
+        }
+    }
+}

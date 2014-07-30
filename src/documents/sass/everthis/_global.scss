@@ -1,0 +1,84 @@
+@import "compass/layout";
+
+// sticky footer
+@include sticky-footer(40px, ".root", ".root_footer", ".footer");
+// end of sticky footer
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html * {
+    font-family: "OpenSans-Regular";
+}
+.root {
+    background-color: $cyan_2;
+}
+.hide {
+    display: none;
+}
+a {
+    color: $steelblue;
+}
+b,
+strong,
+dt {
+  font-weight: bold;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+
+// Blockquotes
+blockquote {
+  padding: ($line-height-computed / 2);
+  margin: 0 0 $line-height-computed;
+  font-size: $blockquote-font-size;
+  border-left: 5px solid $blockquote-border-color;
+  background-color: $very_light_grey;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%; // back to default font-size
+    line-height: $line-height-base;
+    color: $blockquote-small-color;
+
+    &:before {
+      content: '\2014 \00A0'; // em dash, nbsp
+    }
+  }
+}
+
+.dl-horizontal {
+  dd {
+    @include clearfix(); // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    dt {
+      float: left;
+      width: ($component-offset-horizontal - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow();
+    }
+    dd {
+      margin-left: $component-offset-horizontal;
+      text-align: left;
+    }
+  }
+}
+
+.img-responsive {
+  @include img-responsive();
+}

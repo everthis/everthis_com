@@ -1,0 +1,282 @@
+---
+layout: 'post'
+title: "It's a wonderful life (1946)"
+author: 'wwwap'
+createdDate: "2014-07-21"
+lastModifiedDate: "2014-07-26"
+---
+
+<%- @partial('banner_it_is_a_wonderful_life') %>
+<div class="post">
+<div class="post_title"><%= @getDocumentTitle() %></div>
+<div class="post_content">
+     <div class="film-img">
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_000537.jpg" alt="">
+             <div class="quote">
+                 <blockquote>
+                     <dl class="dl-horizontal">
+                         <dt>George:</dt>
+                         <dd>I wish I had a million dollars... Hot dog!</dd>
+
+                     </dl>
+                 </blockquote>
+             </div>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_000620.jpg" alt="">
+
+             <div class="quote">
+                 <blockquote>
+                     <dl class="dl-horizontal">
+                         <dt>Violet:</dt>
+                         <dd>Help me down?</dd>
+
+                         <dt>
+                             George:
+                         </dt>
+                         <dd>Help you down!</dd>
+                     </dl>
+                 </blockquote>
+             </div>
+
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_000625.jpg" alt="">
+
+
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_000638.jpg" alt="">
+             <div class="quote">
+                 <blockquote>
+                     <dl class="dl-horizontal">
+                         <dt>George:</dt>
+                         <dd>I'm going out exploring some day, you watch. And I'm going to have a couple of harems, and maybe three or four wives. Wait and see.</dd>
+                     </dl>
+                 </blockquote>
+             </div>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_000700.jpg" alt="">
+             <div class="quote">
+                 <blockquote>
+                     <dl class="dl-horizontal">
+                         <dt>Mary:</dt>
+                         <dd>Is this the ear you can't hear on? George Bailey, I'll love you till the day I die.</dd>
+                     </dl>
+                 </blockquote>
+             </div>
+
+         </div>
+
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_001049.jpg" alt="">
+         </div>
+
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_001153.jpg" alt="">
+         </div>
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>Joseph:</dt>
+                     <dd>I want you to take a good look at that face.</dd>
+
+                     <dt>Clarence:</dt><dd>Who is it?</dd>
+
+                     <dt>Joseph:</dt><dd>George Bailey.</dd>
+
+                     <dt>Clarence:</dt><dd>Oh, you mean the kid that had his ears slapped back by the druggist.</dd>
+
+                     <dt>Joseph:</dt><dd>That's the kid.</dd>
+
+                     <dt>Clarence:</dt><dd>It's a good face. I like it. I like George Bailey. Tell me, did he ever tell anyone about the pills?</dd>
+
+                     <dt>Joseph:</dt><dd>Not a soul.</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_002033.jpg" alt="">
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_002030.jpg" alt="">
+         </div>
+
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_002527.jpg" alt="">
+         </div>
+
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>Mary:</dt><dd>Sir, my train, please.</dd>
+
+                     <dt>George:</dt><dd>A pox upon me for a clumsy lout. Your . . . your caboose, milady.</dd>
+
+                     <dt>Mary:</dt><dd>You may kiss my hand.</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_002631.jpg" alt="">
+         </div>
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>Mary:</dt><dd>What did you wish,George?</dd>
+
+                     <dt>George:</dt><dd>Well, not just one wish. A whole hatful, Mary. I know what I'm gonna do tomorrow, and the next day, and the next year, and the year after that. I'm shakin' the dust of this crummy little town off my feet and I'm gonna see the world. Italy, Greece, the Parthenon, the Colosseum. Then, I'm comin' back here and go to college and see what they know... And then I'm gonna build things. I'm gonna build airfields, I'm gonna build skyscrapers a hundred stories high, I'm gonna build bridges a mile long...</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_002713.jpg" alt="">
+         </div>
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>George:</dt><dd>What is it you want, Mary? What do you want? You want the moon? Just say the word and I'll throw a lasso around it and pull it down. Hey. That's a pretty good idea. I'll give you the moon, Mary.</dd>
+
+                     <dt>Mary:</dt><dd>I'll take it. Then what?</dd>
+
+                     <dt>George:</dt><dd>Well, then you could swallow it, and it'd all dissolve, see? And the moonbeams'd shoot out of your fingers and your toes, and the ends of your hair... Am I talking too much?</dd>
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_002751.jpg" alt="">
+         </div>
+
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>Old Man:</dt><dd>Yes! Why don't you kiss her instead of talking her to death?</dd>
+
+                     <dt>George:</dt><dd>How's that?</dd>
+
+                     <dt>Old Man:</dt><dd>Why don't you kiss her instead of talking her to death?</dd>
+
+                     <dt>George:</dt><dd>Want me to kiss her, huh?</dd>
+
+                     <dt>Old Man:</dt><dd>Ah, youth is wasted on the wrong people!</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_002755.jpg" alt="">
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_004943.jpg" alt="">
+         </div>
+
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>Sam:</dt><dd>[to George] I may have a job for you, that is, unless you're still married to that broken-down building and loan. Ha, ha, ha. It's the biggest thing since radio and I'm lettin' you in on the ground floor. [to Mary] Will you tell that guy I'm giving him the chance of a lifetime? You hear - the chance of a lifetime.</dd>
+
+                     <dt>Mary:</dt><dd>He says it's the chance of a lifetime.</dd>
+
+
+                     <dt>George:</dt><dd>Now, you listen to me! I don't want any plastics, and I don't want any ground floors, and I don't want to get married - ever - to anyone! You understand that? I want to do what I want to do. And you're...and you're... Oh Mary, Mary.</dd>
+
+                     <dt>Mary:</dt><dd>George, George, George.</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_005130.jpg" alt="">
+         </div>
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>George:</dt><dd>Where are we going? Look at this. There's the kitty, Ernie. Here, come on, count it, Mary.</dd>
+
+                     <dt>
+                         Mary:
+                     </dt>
+                     <dd>I feel like a bootlegger's wife.Look!</dd>
+                     <dt>
+                         George:
+                     </dt><dd>You know what we're going to do? We're going to shoot the works. A whole week in New York. A whole week in Bermuda. The highest hotels, the oldest champagne, the richest caviar, the hottest music, and the prettiest wife!</dd>
+
+                     <dt>Ernie:</dt><dd>Wow! That does it! Then what?</dd>
+
+                     <dt>George:</dt><dd>Then what, honey?</dd>
+
+                     <dt>
+                         Mary:
+                     </dt>
+                     <dd>After that, who cares?</dd>
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_005202.jpg" alt="">
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_012416.jpg" alt="">
+         </div>
+
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>George:</dt><dd>Listen to me! Listen to me! Think! Think!</dd>
+
+                     <dt>Uncle Billy:</dt><dd>I can't think any more, George. I can't think any more. It hurts . . .</dd>
+
+
+                     <dt>George:</dt><dd>Where's that money, you stupid, silly old fool? Where's the money? Do you realize what this means? It means bankruptcy and scandal, and prison! That's what it means! One of us is going to jail! Well, it's not going to be me!</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_013400.jpg" alt="">
+         </div>
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>Potter:</dt><dd>I see. I've suddenly become quite important. What kind of security would I have, George? Have you got any stocks?</dd>
+
+                     <dt>George:</dt><dd>No, sir.</dd>
+
+
+                     <dt>Potter:</dt><dd>Bonds? Real estate? Collateral of any kind?</dd>
+
+                     <dt>George:</dt><dd>I have some life insurance, a fifteen thousand dollar policy.</dd>
+
+                     <dt>Potter:</dt><dd>Yes . . . how much is your equity in it?</dd>
+
+                     <dt>George:</dt><dd>Five hundred dollars.</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_015916.jpg" alt="">
+         </div>
+         <div class="quote">
+             <blockquote>
+                 <dl class="dl-horizontal">
+                     <dt>Clrence:</dt><dd>Strange, isn't it? Each man's life touches so many other lives. When he isn't around he leaves an awful hole, doesn't he? You see, George, you've really had a wonderful life. Don't you see what a mistake it would be to throw it away?</dd>
+
+                 </dl>
+             </blockquote>
+         </div>
+         <div class="text-center">
+             <img src="../images/it_is_a_wonderful_life/It's.A.Wonderful.Life.Colorized.Version.1946.720p.BluRay.x264-EbP.mkv_020510.jpg" alt="">
+         </div>
+
+         <hr>
+
+     </div>
+</div>

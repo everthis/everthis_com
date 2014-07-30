@@ -1,0 +1,7 @@
+@import "compass/css3";
+
+@include font-face("OpenSans-Regular", font-files("OpenSans-Regular.ttf", "OpenSans-Regular.eot", "OpenSans-Regular.woff", "OpenSans-Regular.svg"));
+@include font-face("Montserrat_Bold", font-files("Montserrat_Bold.ttf", "Montserrat_Bold.eot", "Montserrat_Bold.woff", "Montserrat_Bold.svg"));
+@include font-face("OpenSans-Light", font-files("OpenSans-Light.ttf", "OpenSans-Light.eot", "OpenSans-Light.woff", "OpenSans-Light.svg"));
+@include font-face("Matrix", font-files("Matrix.ttf", "Matrix.eot", "Matrix.woff", "Matrix.svg"));
+

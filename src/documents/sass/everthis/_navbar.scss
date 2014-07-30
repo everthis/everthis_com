@@ -1,0 +1,81 @@
+.site_menu {
+    width: 100%;
+    background-color: $white;
+    margin: 0 auto;
+    overflow: auto; // important for child margin-top
+    box-shadow: 0 0 5px 0 $grey;
+    .web_name {
+        background: url(../images/cloudy.png);
+        width: $container_width;
+        height: 110px;
+        margin: 20px auto 0;
+        animation: animatedBackground 20s linear infinite;
+        .abouttitle {
+            background: url(../images/header.png);
+            width: $container_width;
+            height: 110px;
+        }
+    }
+    .tab_menu {
+        display: block;
+        height: 36px;
+        background: #EFF7FF;
+        border-bottom: 3px solid #5F99CF;
+        margin: 0 auto;
+        width: $container_width;
+        padding-left: 20px;
+        li {
+            display: inline-block;
+            font-weight: bold;
+            margin: 0px 3px;
+            &.selected a {
+                color: #FFF;
+                background: #5F99CF;
+                border-color: #5F99CF;
+                z-index: 100;
+            }
+            &.logo a {
+                border: none;
+                width: 40px;
+                background-color: transparent;
+                margin-right: 15px;
+            }
+            &.logo .icon {
+                font-size: 22px;
+                vertical-align: middle;
+                display: inline-block;
+                height: 26px;
+                line-height: 25px;
+            }
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            background: #FFF;
+            color: #828282;
+            font-size: 14px;
+            height: 33px;
+            line-height: 30px;
+            border-left: 2px solid #CCC;
+            border-right: 2px solid #CCC;
+            border-bottom: 0px solid #CCC;
+            text-align: center;
+            padding: 2px 6px 0 6px;
+            &:hover {
+                color: #555;
+                border-color: #B1CBE3;
+                background: #D7E4F0;
+            }
+        }
+    }
+}
+
+
+@keyframes animatedBackground {
+    from {
+        background-position: 2542px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}

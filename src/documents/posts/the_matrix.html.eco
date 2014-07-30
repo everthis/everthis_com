@@ -1,0 +1,14 @@
+---
+layout: 'post'
+title: "The matrix"
+author: 'wwwap'
+createdDate: "2014-07-22"
+---
+
+<%- @partial('banner_the_matrix') %>
+<div class="post">
+    <div class="post_title"><%= @getDocumentTitle() %></div>
+    <div class="post_content">
+
+    </div>
+</div>

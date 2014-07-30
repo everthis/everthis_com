@@ -1,0 +1,19 @@
+<div class="site_menu">
+   <ul class="tab_menu">
+       <li class="logo"><a href="<%= @site.url %>"><span class="icon icon-sigma"></span></a></li>
+       <li class="selected"><a href="#">Computer science</a>
+       </li>
+       <li><a href="#">Hardware</a>
+       </li>
+       <li><a href="#">Mathematics</a>
+       </li>
+       <li><a href="#">Physics</a>
+       </li>
+       <li><a href="#">Multimedia</a>
+       </li>
+       <li><a href="#">Books</a>
+       </li>
+       <li><a href="#">About</a>
+       </li>
+   </ul>
+</div>

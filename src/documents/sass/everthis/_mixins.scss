@@ -1,0 +1,78 @@
+@mixin bd_bdrs_bxsd() {
+  border: 1px solid $steelblue;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 $steelblue;
+}
+
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+}
+&:after {
+    clear: both;
+}
+}
+
+
+// Requires inline-block or block for proper styling
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+// vertical and horizontal center
+// HTML structure .vh_center_parent>.vh_center
+@mixin vertical_horizontal_center($parent-selector: unquote(".vh_center_parent"), $center-selector: unquote(".vh_center")) {
+    /* This parent can be any width and height */
+    #{$parent-selector} {
+        text-align: center;
+        // margin-bottom:10px;
+        // height: 300px;
+        /* The ghost, nudged to maintain perfect centering */
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -0.25em; /* Adjusts for spacing */
+        }
+        /* The element to be centered, can also be of any width and height */
+        #{$center-selector} {
+            display: inline-block;
+            vertical-align: middle;
+            // height: 100px;
+            // width: 200px
+        }
+    }
+
+}
+
+
+@mixin text-shadow() {
+    text-shadow: 1px 1px 4px rgba(10, 10, 10, 0.3);
+}

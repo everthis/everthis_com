@@ -1,0 +1,7 @@
+<div class="banner">
+    <canvas id="matrix" class="matrix">
+        <h1 class="matrix">Dude,your browser does not support canvas.</h1>
+    </canvas>
+    <div class="matrix_title">The Matrix</div>
+</div>
+<script src="../scripts/matrix_rain.js"></script>

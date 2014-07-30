@@ -1,0 +1,137 @@
+---
+layout: 'post'
+title: "Using .bashrc in Unix systems"
+author: 'wwwap'
+createdDate: "2014-07-22"
+---
+<div class="post">
+  <div class="post_title"><%= @getDocumentTitle() %></div>
+  <div class="post_content">
+
+    Using .bashrc in Unix systems
+    FileCloud Networking on January 31, 2014 Bookmark and Share
+    If you are a system administrator, your tasks generally require you to login to many systems remotely through the terminal, and having proper knowledge of useful commands is a must! However, just knowing about these commands is not sufficient because you need to use them efficiently. Getting your mind over the bashrc file is one step in that process.
+
+    Where is the .bashrc file located?
+    Since messing around with the .bashrc file can cause big issues with your system, it is a hidden file located in your home directory. That means you can open the file with any text editor by going to ~/.bashrc. The absolute path is /home/<my_username>/.bashrc
+
+    Using alias
+    In the terminal, alias can be used to make custom commands. Let’s say you need to login into a remote system, which requires the following command-
+    <pre class="brush: bash;">
+       ssh remote_username@xxx.xxx.xx.xx
+    </pre>
+    To simplify that, we can simply execute the following to add an alias.
+    <pre class="brush: bash;">
+       alias mylogin=’ssh remote_username@xxx.xxx.xx.xx’
+    </pre>
+    After that executing just the word mylogin will execute the longer ssh command.
+
+    However, there is a small downside to this- these commands are temporary. Once you close the terminal, your alias command doesn’t exist anymore. To make it permanent, you need to add the line to your .bashrc file. On saving the file, run the following to make your new command(s) available in the terminal.
+    <pre class="brush: bash;">
+    . ~/.bashrc
+    </pre>
+    Useful Commands
+    To find out what is taking up space in your disk, add this alias.
+    <pre class="brush: bash;">
+       alias diskspace=”du -S | sort -n -r |more”
+    </pre>
+    To run videos from the command line itself, you can use this alias. Note that mplayer must be installed.
+    <pre class="brush: bash;">
+       alias mp=”mplayer -fs”
+    </pre>
+    To watch youtube videos through mplayer, use the youtube-dl package to stream it. A video tutorial on the same is available here.
+
+    To move up a directory in Linux, you use “cd ..”. However, to move up multiple directories, there is no special command. You can add aliases for those like the following.
+    <pre class="brush: bash;">
+
+       alias ..=”cd ..”
+
+       alias …=”cd ../..”
+
+       alias ….=”cd ../../..”
+
+       alias ….=”cd ../../../..”
+    </pre>
+    Adding custom commands to .bashrc file
+    The .bashrc file is not only useful in creating alias commands, but you can add functions to it too! Here is a function that helps extract archives.
+
+    <pre class="brush: bash;">
+        extract () {
+
+          if [ -f $1 ] ; then
+
+              case $1 in
+
+                  *.tar.bz2)   tar xvjf $1    ;;
+
+                  *.tar.gz)    tar xvzf $1    ;;
+
+                  *.bz2)       bunzip2 $1     ;;
+
+                  *.rar)       unrar x $1       ;;
+
+                  *.gz)        gunzip $1      ;;
+
+                  *.tar)       tar xvf $1     ;;
+
+                  *.tbz2)      tar xvjf $1    ;;
+
+                  *.tgz)       tar xvzf $1    ;;
+
+                  *.zip)       unzip $1       ;;
+
+                  *.Z)         uncompress $1  ;;
+
+                  *.7z)        7z x $1        ;;
+
+                  *)           echo “don’t know how to extract ‘$1′…” ;;
+
+              esac
+
+          else
+
+              echo “‘$1′ is not a valid file!”
+
+          fi
+
+        }
+    </pre>
+
+
+    We used an alias to go up to four directories in the above case. We go one step ahead and create a command which takes a number as an argument to decide how many directories to go up.
+    <pre class="brush: bash;">
+    up(){
+
+     local d=””
+
+     limit=$1
+
+     for ((i=1 ; i <= limit ; i++))
+
+       do
+
+         d=$d/..
+
+       done
+
+     d=$(echo $d | sed ‘s/^\///’)
+
+     if [ -z "$d" ]; then
+
+       d=..
+
+     fi
+
+     cd $d
+
+    }
+    </pre>
+    You can also add these functions to a file and call them through the .bashrc file.
+
+    With this, we come to the end of this tutorial. We hope that it helped you tap the full potential of the .bashrc and understand its working.
+  </div>
+</div>
+<script type="text/javascript" src="../syntaxHighLighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="../syntaxHighLighter/scripts/shBrushBash.js"></script>
+<link type="text/css" rel="stylesheet" href="../syntaxHighLighter/styles/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>

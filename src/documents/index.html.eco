@@ -1,12 +1,78 @@
 ---
-layout: 'default'
+layout: 'homepage'
+isPaged: true
+pagedCollection: 'posts'
+pageSize: 10
+count: 10
+size: 5
+number: 0
+startIdx: 0
+endIdx: 5
+pages: [50,1]
 ---
 
-<ul>
-	<% for post in @getCollection('posts').sortArray(date: -1): %>
-	<li>
-		<h3><a href="<%= post.url %>"><%- post.title or post.name %></a></h3>
-		<%- post.description %>
-	</li>
-	<% end %>
-</ul>
+
+<!--
+
+<div class="updates">
+    <h3 class="title">Updates:</h3>
+    <% for post in @getCollection('posts').sortArray(date: -1): %>
+    <a href="<%= post.url %>" class="updates_item ripple_item">
+       <span class="item_title"><%- post.title or post.name %></span>
+       <% if post.lastModifiedDate: %>
+           <div class="date"><div class="modified_sign">*</div><%- post.lastModifiedDate %></div>
+           <% else: %>
+           <div class="date"><%- post.createdDate %></div>
+       <% end %>
+       <div class="date"><%- post.lastModifiedDate %></div>
+       <div class="author"><%- post.author %></div>
+   </a>
+   <% end %>
+</div>
+
+-->
+
+<!-- Page Content -->
+<div class="updates">
+    <h3 class="title">Updates:</h3>
+    <% for document in @getPageCollection('posts').toJSON(): %>
+        <a href="<%= document.url %>" class="updates_item ripple_item">
+            <span class="item_title"><%- document.title or document.name %></span>
+            <% if document.lastModifiedDate: %>
+                <div class="date"><div class="modified_sign">*</div><%- document.lastModifiedDate %></div>
+                <% else: %>
+                <div class="date"><%- document.createdDate %></div>
+            <% end %>
+        </a>
+    <% end %>
+
+    <!-- Page Listing -->
+    <div class="pagination">
+        <ul>
+            <!-- Previous Page Button -->
+            <% unless @hasPrevPage(): %>
+                <li class="disabled"><span>Prev</span></li>
+            <% else: %>
+                <li><a href="<%= @getPrevPage() %>">Prev</a></li>
+            <% end %>
+
+            <!-- Page Number Buttons -->
+            <% for pageNumber in [0..@document.page.count-1]: %>
+                <% if @document.page.number is pageNumber: %>
+                    <li class="active"><span><%= pageNumber + 1 %></span></li>
+                <% else: %>
+                    <li><a href="<%= @getPageUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
+                <% end %>
+            <% end %>
+
+            <!-- Next Page Button -->
+            <% unless @hasNextPage(): %>
+                <li class="disabled"><span>Next</span></li>
+            <% else: %>
+                <li><a href="<%= @getNextPage() %>">Next</a></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+

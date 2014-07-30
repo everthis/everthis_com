@@ -1,0 +1,54 @@
+---
+layout: 'post'
+title: "Get Parameters in a JavaScript Script Tag"
+author: 'wwwap'
+createdDate: "2014-07-22"
+---
+<%- @partial('banner_default') %>
+<div class="post">
+  <div class="post_title"><%= @getDocumentTitle() %></div>
+  <div class="post_content">
+    In google-code-prettify, you can specify the code language and skin just in one line. No extra configuration is necessary since the parameters is already appended to the URL.
+    //<script src="svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    So how does the JS file know the parameters appended to its URL? You can just call the function getScriptParams(..) to get the parameters in JS object format.
+    This will get JS object:
+    <pre class="brush: js;">
+    console.log(getScriptParams('run_prettify.js'));
+    </pre>
+    Here is implementation of getScriptParams(..).
+    <pre class="brush: js;">
+    function getScriptParams(scriptFileName) {
+       // Get all script tag
+      var scripts = document.getElementsByTagName('script');
+      var result = {};
+      for(var i = 0; i < scripts.length; ++i) {
+         // Check if the file name is the same as scriptFileName
+        if(scripts[i].src.indexOf(scriptFileName) !== -1) {
+          // Get the parameters string
+          var urls = scripts[i].src.split('?');
+          if(urls.length == 2) {
+            var parameters = urls[1].split('&');
+            for(var j=0; j< parameters.length; ++j) {
+              var pair = parameters[j].split('=');
+              result[pair[0]] = pair[1];
+            }
+          }
+          break;
+        }
+      }
+      return result;
+    }
+    </pre>
+
+    <pre class="brush: js;">
+      var abbb = "\n\nAngular;  Backbone; Console;    Dir;      Express;  Fork;   Grunt;    Haslayout;    Iconfont;\nJsonp;   Kissy;    Localstorage; Media query;  Npm;    Opacity;  Prototype;  Querystring;  Referer;\nSeajs;    Trim;   Underscore;   Vim;      Worker;   Xss;    Yslow;    Zepto;\n\n如果你对上面26个单词都能说出个所以然来，你就是我们要找的人，赶快加入我们吧！\n\n官网招聘入口：http://job.alibaba.com/zhaopin/position_detail.htm?positionId=5242\n面试官直邮：%cyuchun@taobao.com\n\n"
+
+window.console.log(abbb, "color: red");
+    </pre>
+  </div>
+</div>
+
+<script type="text/javascript" src="../syntaxHighLighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="../syntaxHighLighter/scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet" href="../syntaxHighLighter/styles/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>

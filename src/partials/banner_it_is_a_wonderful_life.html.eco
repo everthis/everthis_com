@@ -1,0 +1,7 @@
+<div class="banner">
+    <ul id="banner_img_gallery">
+        <li><img src="../images/it_is_a_wonderful_life/banner01.png" alt="" class="img-responsive"></li>
+        <li><img src="../images/it_is_a_wonderful_life/banner02.png" alt="" class="img-responsive"></li>
+    </ul>
+</div>
+<script src="../scripts/crossfade.js"></script>
