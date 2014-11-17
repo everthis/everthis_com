@@ -41,9 +41,13 @@ createdDate: "2014-07-22"
     </pre>
 
     <pre class="brush: js;">
-      var abbb = "\n\nAngular;  Backbone; Console;    Dir;      Express;  Fork;   Grunt;    Haslayout;    Iconfont;\nJsonp;   Kissy;    Localstorage; Media query;  Npm;    Opacity;  Prototype;  Querystring;  Referer;\nSeajs;    Trim;   Underscore;   Vim;      Worker;   Xss;    Yslow;    Zepto;\n\n如果你对上面26个单词都能说出个所以然来，你就是我们要找的人，赶快加入我们吧！\n\n官网招聘入口：http://job.alibaba.com/zhaopin/position_detail.htm?positionId=5242\n面试官直邮：%cyuchun@taobao.com\n\n"
+      var abbb = "\n\nAngular;  Backbone; Console;    Dir;      Express;  Fork;   Grunt;    Haslayout;    Iconfont;\n"
+                 + "Jsonp;   Kissy;    Localstorage; Media query;  Npm;    Opacity;  Prototype;  Querystring;  Referer;\n"
+                 + "Seajs;    Trim;   Underscore;   Vim;      Worker;   Xss;    Yslow;    Zepto;\n\n"
+                 + "如果你对上面26个单词都能说出个所以然来，你就是我们要找的人，赶快加入我们吧！\n\n官网招聘入口：http://job.alibaba.com/zhaopin/position_detail.htm?positionId=5242\n"
+                 + "面试官直邮：%cyuchun@taobao.com\n\n"
 
-window.console.log(abbb, "color: red");
+      window.console.log(abbb, "color: red");
     </pre>
   </div>
 </div>
@@ -51,4 +55,8 @@ window.console.log(abbb, "color: red");
 <script type="text/javascript" src="../syntaxHighLighter/scripts/shCore.js"></script>
 <script type="text/javascript" src="../syntaxHighLighter/scripts/shBrushJScript.js"></script>
 <link type="text/css" rel="stylesheet" href="../syntaxHighLighter/styles/shCoreDefault.css"/>
-<script type="text/javascript">SyntaxHighlighter.all();</script>
+<link type="text/css" rel="stylesheet" href="../syntaxHighLighter/styles/shThemeMidnight.css"/>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.all();
+</script>

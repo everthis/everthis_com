@@ -54,57 +54,57 @@ module.exports = function(grunt) {
                 files: ["<%= config.app %>/sass/{,*/}*.{scss,sass}"],
                 tasks: ["compass:server", "autoprefixer"]
             },
-            livereload: {
-                options: {
-                    livereload: "<%= connect.options.livereload %>"
-                },
-                files: [
-                    "<%= config.out %>/{,*/}*.html",
-                    ".tmp/styles/{,*/}*.css",
-                    "<%= config.app %>/sass/{,*/}*.scss",
-                    "<%= config.out %>/scripts/{,*/}*.js",
-                    "<%= config.files %>/images/{,*/}*"
-                ]
-            }
+            // livereload: {
+            //     options: {
+            //         livereload: "<%= connect.options.livereload %>"
+            //     },
+            //     files: [
+            //         // "<%= config.out %>/{,*/}*.html",
+            //         ".tmp/styles/{,*/}*.css",
+            //         "<%= config.app %>/sass/{,*/}*.scss",
+            //         "<%= config.out %>/scripts/{,*/}*.js",
+            //         "<%= config.files %>/images/{,*/}*"
+            //     ]
+            // }
 
         },
 
         // The actual grunt server settings
-        connect: {
-            options: {
-                port: 9777,
-                livereload: 35728,
-                // Change this to "0.0.0.0" to access the server from outside
-                hostname: "localhost"
-            },
-            livereload: {
-                options: {
-                    open: true,
-                    base: [
-                        ".tmp",
-                        "<%= config.out %>",
-                        "<%= config.app %>"
-                    ]
-                }
-            },
-            test: {
-                options: {
-                    port: 9001,
-                    base: [
-                        ".tmp",
-                        "test",
-                        "<%= config.app %>"
-                    ]
-                }
-            },
-            dist: {
-                options: {
-                    open: true,
-                    base: "<%= config.dist %>",
-                    livereload: false
-                }
-            }
-        },
+        // connect: {
+        //     options: {
+        //         port: 9777,
+        //         livereload: 35728,
+        //         // Change this to "0.0.0.0" to access the server from outside
+        //         hostname: "localhost"
+        //     },
+        //     livereload: {
+        //         options: {
+        //             open: true,
+        //             base: [
+        //                 ".tmp",
+        //                 "<%= config.out %>",
+        //                 "<%= config.app %>"
+        //             ]
+        //         }
+        //     },
+        //     test: {
+        //         options: {
+        //             port: 9001,
+        //             base: [
+        //                 ".tmp",
+        //                 "test",
+        //                 "<%= config.app %>"
+        //             ]
+        //         }
+        //     },
+        //     dist: {
+        //         options: {
+        //             open: true,
+        //             base: "<%= config.dist %>",
+        //             livereload: false
+        //         }
+        //     }
+        // },
 
         // Empties folders to start fresh
 
@@ -195,14 +195,14 @@ module.exports = function(grunt) {
     });
     grunt.registerTask("serve", function(target) {
         if (target === "dist") {
-            return grunt.task.run(["build", "connect:dist:keepalive"]);
+            return grunt.task.run(["build"/*, "connect:dist:keepalive" */]);
         }
 
         grunt.task.run([
             "clean:sass",
             "concurrent:server",
             "autoprefixer",
-            "connect:livereload",
+            // "connect:livereload",
             "watch"
         ]);
     });

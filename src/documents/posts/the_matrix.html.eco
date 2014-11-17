@@ -9,6 +9,6 @@ createdDate: "2014-07-22"
 <div class="post">
     <div class="post_title"><%= @getDocumentTitle() %></div>
     <div class="post_content">
-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odit ex, atque deleniti blanditiis, iste, possimus, ullam optio id tempore dolorum aliquid dignissimos ad voluptates quos reiciendis! Culpa quibusdam ex ut velit itaque quis molestiae minus vero, natus perferendis laudantium amet reiciendis ullam, harum officiis! Rerum in omnis, nostrum soluta repellat pariatur, possimus ut delectus. Explicabo culpa, ratione, voluptatum placeat sed, perferendis veniam totam quam, odit fugiat voluptate! Molestias odit fugit mollitia, cum assumenda asperiores necessitatibus adipisci quia vero corporis dignissimos molestiae expedita numquam maiores voluptatibus est earum ipsum saepe ut! Voluptatum adipisci quis possimus minus eaque quod, neque nostrum.
     </div>
 </div>
